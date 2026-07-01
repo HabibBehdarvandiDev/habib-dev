@@ -1,7 +1,9 @@
 import { cn } from "@/lib/utils";
 import Providers from "@/providers/providers";
-import type { Metadata } from "next";
 import { Playpen_Sans, Roboto } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import "./globals.css";
 
 const roboto = Roboto({ subsets: ["latin"], variable: "--font-sans" });
@@ -72,6 +74,8 @@ export default function RootLayout({
         >
             <body className="min-h-full flex flex-col bg-background text-foreground ">
                 <Providers>{children}</Providers>
+                <Analytics />
+                <SpeedInsights />
             </body>
         </html>
     );
