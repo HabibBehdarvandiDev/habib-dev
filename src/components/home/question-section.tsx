@@ -71,7 +71,7 @@ const QuestionSection = () => {
 
                         {/* Text */}
                         <div className="flex flex-col gap-2">
-                            <h2 className="text-base font-semibold text-gray-900">
+                            <h2 className="text-base font-semibold text-foreground">
                                 Got a question? Let&apos;s chat.
                             </h2>
                             <p className="text-sm text-gray-400 leading-relaxed">
