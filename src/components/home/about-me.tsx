@@ -29,7 +29,7 @@ const AboutMeSection = () => {
 
             {/* Content */}
             <div className="flex w-full max-w-3xl flex-col items-start gap-6 lg:w-1/2">
-                <h2 className="text-3xl font-semibold md:text-4xl">
+                <h2 className="text-3xl font-semibold md:text-4xl font-sans">
                     A bit About Me
                 </h2>
 

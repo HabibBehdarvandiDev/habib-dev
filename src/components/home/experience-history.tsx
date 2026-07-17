@@ -69,7 +69,7 @@ const ExperienceHistory = () => {
             <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="mx-auto mb-12 max-w-2xl text-center lg:mb-16">
-                    <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+                    <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl font-sans">
                         Where I&apos;ve Worked
                     </h2>
 
