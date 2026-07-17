@@ -13,7 +13,7 @@ export const NavLinks: NavLinkType[] = [
     },
     {
         id: 3,
-        title: "Q&A",
+        title: "faq",
         url: "#faqs",
     },
     {
@@ -26,4 +26,4 @@ export const NavLinks: NavLinkType[] = [
         title: "experience",
         url: "#experience",
     },
-];
+] as const;

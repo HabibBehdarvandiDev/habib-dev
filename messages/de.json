@@ -1,0 +1,115 @@
+{
+    "hero": {
+        "badge": "Hallo!",
+        "intro": "Ich bin",
+        "name": "Habib Behdarvandi",
+        "headline": {
+            "before": "Ich entwickle",
+            "focus": "Full-Stack",
+            "after": "Webanwendungen"
+        },
+        "contactButton": "Kontakt aufnehmen"
+    },
+    "about": {
+        "title": "Ein wenig über mich",
+        "paragraph1": "Hallo, ich bin Habib. Ich habe mit dem Programmieren begonnen, weil mich die Idee faszinierte, etwas aus dem Nichts zu erschaffen – und dieses Gefühl begleitet mich bis heute. Heute verbringe ich den Großteil meiner Zeit damit, moderne Webanwendungen zu entwickeln, mit aktuellen Technologien zu arbeiten und kontinuierlich Neues zu lernen. Besonders schätze ich die Verbindung aus Kreativität und Problemlösung, die die Softwareentwicklung bietet.",
+        "paragraph2": "Wenn ich an einem Projekt arbeite, geht es mir um mehr als nur den Abschluss der Aufgabe. Ich möchte das große Ganze verstehen, auf Details achten und Lösungen nachhaltig umsetzen. Ob persönliches Projekt oder umfangreiche Plattform – ich genieße den Prozess, eine Idee Schritt für Schritt zu verfeinern und daraus ein Produkt zu entwickeln, das Menschen tatsächlich nutzen und von dem sie profitieren können.",
+        "contactButton": "Kontakt aufnehmen"
+    },
+    "skills": {
+        "title": "Meine Fähigkeiten & Technologien",
+        "description": "Technologien und Werkzeuge, die ich für die Entwicklung, Bereitstellung und Wartung moderner Webanwendungen verwende."
+    },
+    "faq": {
+        "title": "Lassen Sie uns einige Fragen klären",
+        "contact": {
+            "title": "Sie haben eine Frage? Lassen Sie uns sprechen.",
+            "description": "Ich bin nur eine Nachricht entfernt. Egal ob Bug, Zusammenarbeit oder einfach nur ein Hallo.",
+            "email": "Schreiben Sie mir eine E-Mail",
+            "telegram": "Kontaktieren Sie mich auf Telegram"
+        },
+        "card": {
+            "title": "Fragen zu meiner Arbeitsweise",
+            "description": "Häufig gestellte Fragen zu Ihrem Projekt und meiner Zusammenarbeit mit Kunden."
+        },
+        "items": [
+            {
+                "question": "An welchen Projekten arbeiten Sie normalerweise?",
+                "answer": "Ich entwickle hauptsächlich Full-Stack-Webanwendungen, darunter SaaS-Plattformen, interne Verwaltungssysteme, Community-Plattformen, E-Commerce-Lösungen und individuelle Geschäftsanwendungen. Ich begleite Projekte gerne von der ersten Idee bis zur Bereitstellung."
+            },
+            {
+                "question": "Unterstützen Sie auch bei Projektplanung und Architektur?",
+                "answer": "Ja. Bevor ich Code schreibe, analysiere ich die Geschäftsziele, plane die Datenbankstruktur, entwerfe die Architektur und erkenne potenzielle Herausforderungen frühzeitig. Eine solide Grundlage spart später viel Zeit."
+            },
+            {
+                "question": "Übernehmen Sie sowohl Frontend als auch Backend?",
+                "answer": "Ja. Ich arbeite über den gesamten Stack hinweg – von responsiven Benutzeroberflächen mit Next.js und Tailwind CSS bis hin zu Datenbanken, APIs, Authentifizierung und Deployment."
+            },
+            {
+                "question": "Wie schnell können Sie starten?",
+                "answer": "Das hängt von meiner aktuellen Auslastung und dem Umfang des Projekts ab. In der Regel antworte ich schnell und kann innerhalb weniger Tage mit der Planung und den ersten Gesprächen beginnen."
+            },
+            {
+                "question": "Wie arbeiten Sie normalerweise mit Kunden oder Teams zusammen?",
+                "answer": "Ich lege Wert auf klare Kommunikation, realistische Erwartungen und regelmäßige Updates. Ob ich eigenständig oder im Team arbeite – mein Fokus liegt auf Transparenz, wartbarem Code und nachhaltigen Lösungen."
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Was andere sagen",
+        "description": "Feedback von Kunden, Kollegen und Teammitgliedern, mit denen ich zusammenarbeiten durfte.",
+        "empty": {
+            "title": "Noch keine Bewertungen",
+            "description": "Ich sammle derzeit Feedback von Kunden und Projektpartnern. Schauen Sie bald wieder vorbei, um ihre Erfahrungen zu lesen."
+        }
+    },
+    "experience": {
+        "title": "Mein beruflicher Werdegang",
+        "description": "Eine Übersicht über die Unternehmen, Positionen und Projekte, die meinen Weg als Softwareentwickler geprägt haben.",
+        "items": [
+            {
+                "date": "Sep. 2025 – Dez. 2025",
+                "title": "Spezialist für Gaming-PC-Montage",
+                "company": "PCMOD",
+                "description": "Zusammenbau und Konfiguration individueller Gaming-PCs mit Fokus auf Hardware-Kompatibilität, Leistungsoptimierung und Qualitätssicherung."
+            },
+            {
+                "date": "Okt. 2023 – Okt. 2025",
+                "title": "Webmaster",
+                "company": "TSCO",
+                "description": "Verwaltung und Optimierung der Unternehmenswebseiten mit Schwerpunkt auf Performance, SEO, Content-Workflows und Benutzererfahrung."
+            },
+            {
+                "date": "Mär. 2023 – Sep. 2023",
+                "title": "Full-Stack-Entwickler",
+                "company": "TSCO",
+                "description": "Entwicklung interner Plattformen und Geschäftslösungen in den Bereichen Frontend, Backend, Datenbanken und Systemintegration."
+            },
+            {
+                "date": "Aug. 2022 – Okt. 2022",
+                "title": "ICDL-Dozent",
+                "company": "Farabi Entrepreneurship Complex",
+                "description": "Vermittlung von Computergrundlagen, Office-Anwendungen, Internetkenntnissen und digitaler Kompetenz."
+            },
+            {
+                "date": "Jan. 2022 – Okt. 2022",
+                "title": "IT-Spezialist",
+                "company": "Amirkabir Technical & Vocational University",
+                "description": "Technischer Support, Systemwartung, Fehlerbehebung und Unterstützung der IT-Infrastruktur an der Universität."
+            },
+            {
+                "date": "Apr. 2021 – Heute",
+                "title": "Full-Stack-Webentwickler",
+                "company": "Freiberuflich",
+                "description": "Entwicklung moderner Webanwendungen, Automatisierungslösungen und individueller Software für Kunden."
+            }
+        ]
+    },
+    "navigation": {
+        "about": "Über mich",
+        "skills": "Fähigkeiten",
+        "faq": "Fragen",
+        "testimonials": "Referenzen",
+        "experience": "Erfahrung"
+    }
+}

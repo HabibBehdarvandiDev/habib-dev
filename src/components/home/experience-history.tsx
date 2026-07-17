@@ -8,59 +8,23 @@ import {
     TimelineSeparator,
     TimelineTitle,
 } from "@/components/reui/timeline";
+import { cn } from "@/lib/utils";
+import { useMessages } from "next-intl";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
 
-const roadmap = [
-    {
-        id: 1,
-        date: "Sep 2025 - Dec 2025",
-        title: "Gaming PC Assembly Specialist",
-        company: "PCMOD",
-        description:
-            "Built and configured custom gaming systems, ensuring hardware compatibility, performance tuning, and quality assurance.",
-    },
-    {
-        id: 2,
-        date: "Oct 2023 - Oct 2025",
-        title: "Webmaster",
-        company: "TSCO",
-        description:
-            "Managed and optimized company websites, improving performance, SEO, content workflows, and overall user experience.",
-    },
-    {
-        id: 3,
-        date: "Mar 2023 - Sep 2023",
-        title: "Full-Stack Developer",
-        company: "TSCO",
-        description:
-            "Developed internal platforms and business solutions, working across frontend, backend, databases, and system integrations.",
-    },
-    {
-        id: 4,
-        date: "Aug 2022 - Oct 2022",
-        title: "ICDL Instructor",
-        company: "Farabi Entrepreneurship Complex",
-        description:
-            "Taught computer fundamentals, office software, internet skills, and digital literacy to students and professionals.",
-    },
-    {
-        id: 5,
-        date: "Jan 2022 - Oct 2022",
-        title: "IT Specialist",
-        company: "Amirkabir Technical & Vocational University",
-        description:
-            "Provided technical support, system maintenance, troubleshooting, and infrastructure assistance across the university environment.",
-    },
-    {
-        id: 6,
-        date: "Apr 2021 - Present",
-        title: "Full-Stack Web Developer",
-        company: "Freelance",
-        description:
-            "Building web applications, automation tools, and custom solutions for clients using modern frontend and backend technologies.",
-    },
-];
+const ExperienceHistory = async () => {
+    const t = await getTranslations("experience");
+    const locale = await getLocale();
 
-const ExperienceHistory = () => {
+    const messages = await getMessages();
+
+    const roadmap = messages.experience.items as {
+        date: string;
+        title: string;
+        company: string;
+        description: string;
+    }[];
+
     return (
         <section
             id="experience"
@@ -69,13 +33,19 @@ const ExperienceHistory = () => {
             <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="mx-auto mb-12 max-w-2xl text-center lg:mb-16">
-                    <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl font-sans">
-                        Where I&apos;ve Worked
+                    <h2
+                        className={cn(
+                            "text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl",
+                            locale === "fa"
+                                ? "[font-family:var(--font-sans-fa)]"
+                                : "[font-family:var(--font-sans)]",
+                        )}
+                    >
+                        {t("title")}
                     </h2>
 
                     <p className="mt-4 text-sm text-muted-foreground sm:text-base">
-                        A timeline of the companies, roles, and projects that
-                        shaped my journey as a developer.
+                        {t("description")}
                     </p>
                 </div>
 
@@ -84,10 +54,10 @@ const ExperienceHistory = () => {
                     defaultValue={roadmap.length}
                     className="mx-auto w-full max-w-3xl"
                 >
-                    {roadmap.map((item) => (
+                    {roadmap.map((item, idx) => (
                         <TimelineItem
-                            key={item.id}
-                            step={item.id}
+                            key={idx}
+                            step={idx}
                             className="pb-8 sm:group-data-[orientation=vertical]/timeline:ms-40"
                         >
                             <TimelineHeader>

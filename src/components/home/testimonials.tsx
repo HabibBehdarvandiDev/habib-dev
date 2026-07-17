@@ -1,6 +1,9 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 import { Smile } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 
 type Testimonial = {
     image: string;
@@ -88,7 +91,10 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
     );
 }
 
-export default function TestimonialsSection() {
+export default async function TestimonialsSection() {
+    const t = await getTranslations("testimonials");
+    const locale = await getLocale();
+
     return (
         <section
             id="testimonials"
@@ -97,13 +103,19 @@ export default function TestimonialsSection() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="mx-auto mb-12 max-w-2xl text-center lg:mb-16">
-                    <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl font-sans">
-                        What People Say
+                    <h2
+                        className={cn(
+                            "text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl",
+                            locale === "fa"
+                                ? "[font-family:var(--font-sans-fa)]"
+                                : "[font-family:var(--font-sans)]",
+                        )}
+                    >
+                        {t("title")}
                     </h2>
 
                     <p className="mt-4 text-sm text-muted-foreground sm:text-base">
-                        Feedback from clients, collaborators, and teammates
-                        I&apos;ve had the opportunity to work with.
+                        {t("description")}
                     </p>
                 </div>
 
@@ -125,13 +137,11 @@ export default function TestimonialsSection() {
                                 </div>
 
                                 <h3 className="text-lg font-semibold">
-                                    No testimonials yet
+                                    {t("empty.title")}
                                 </h3>
 
                                 <p className="mt-2 max-w-md text-sm text-muted-foreground">
-                                    I&apos;m currently collecting feedback from
-                                    clients and collaborators. Check back soon
-                                    to see what people have to say!
+                                    {t("empty.description")}
                                 </p>
                             </CardContent>
                         </Card>

@@ -5,10 +5,21 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
+import { hasLocale } from "next-intl";
+import { routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
+import { getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
+import localFont from "next/font/local";
 
 const roboto = Roboto({ subsets: ["latin"], variable: "--font-sans" });
 
 const playpen = Playpen_Sans({ subsets: ["latin"], variable: "--font-sans" });
+
+const yekanBakh = localFont({
+    src: "../../assets/fonts/YekanBakh.woff2",
+    variable: "--font-sans-fa",
+});
 
 export const metadata = {
     metadataBase: new URL("https://habib-dev.ir"),
@@ -56,24 +67,37 @@ export const metadata = {
     },
 };
 
-export default function RootLayout({
-    children,
-}: Readonly<{
+type Props = {
     children: React.ReactNode;
-}>) {
+    params: Promise<{ locale: string }>;
+};
+
+export default async function RootLayout({ children, params }: Props) {
+    const { locale } = await params;
+    if (!hasLocale(routing.locales, locale)) {
+        notFound();
+    }
+
+    const messages = await getMessages();
+
     return (
         <html
-            lang="en"
+            lang={locale}
+            dir={locale === "fa" ? "rtl" : "ltr"}
             className={cn(
                 "h-full",
                 "antialiased",
                 "scroll-smooth duration-300 transition-all",
-                roboto.className,
+                locale === "fa" ? yekanBakh.className : roboto.className,
                 playpen.variable,
             )}
         >
             <body className="min-h-full flex flex-col bg-background text-foreground ">
-                <Providers>{children}</Providers>
+                <Providers>
+                    <NextIntlClientProvider messages={messages}>
+                        {children}
+                    </NextIntlClientProvider>
+                </Providers>
                 <Analytics />
                 <SpeedInsights />
             </body>

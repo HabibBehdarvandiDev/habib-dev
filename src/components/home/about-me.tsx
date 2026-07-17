@@ -1,12 +1,17 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 import HabibImage from "@/../public/habib.png";
 
-import { Button } from "../ui/button";
 import Link from "next/link";
+import { Button } from "../ui/button";
+import { cn } from "@/lib/utils";
+import { getTranslations, getLocale } from "next-intl/server";
 
-const AboutMeSection = () => {
+const AboutMeSection = async () => {
+    const t = await getTranslations("about");
+    const locale = await getLocale();
+
     return (
         <section
             className="relative flex min-h-dvh w-full flex-col items-center justify-center gap-12 overflow-hidden bg-white px-6 py-20 dark:bg-[#111111] lg:flex-row lg:px-16"
@@ -29,36 +34,37 @@ const AboutMeSection = () => {
 
             {/* Content */}
             <div className="flex w-full max-w-3xl flex-col items-start gap-6 lg:w-1/2">
-                <h2 className="text-3xl font-semibold md:text-4xl font-sans">
-                    A bit About Me
+                <h2
+                    className={cn(
+                        "text-3xl font-semibold md:text-4xl",
+                        locale === "fa"
+                            ? "[font-family:var(--font-sans-fa)]"
+                            : "[font-family:var(--font-sans)]",
+                    )}
+                >
+                    {t("title")}
                 </h2>
 
                 <p className="leading-8 text-zinc-600 dark:text-zinc-400">
-                    Hi, I&apos;m Habib. I started programming because I loved
-                    the idea of creating something from nothing, and that
-                    feeling still hasn&apos;t gone away. These days, I spend
-                    most of my time building web applications, working with
-                    modern technologies, and constantly learning new things. I
-                    enjoy the balance between creativity and problem-solving
-                    that software development offers.
+                    {t("paragraph1")}
                 </p>
 
                 <p className="leading-8 text-zinc-600 dark:text-zinc-400">
-                    When I&apos;m working on a project, I care about more than
-                    just getting it done. I like understanding the bigger
-                    picture, paying attention to the details, and building
-                    things the right way. Whether it&apos;s a personal side
-                    project or a larger platform, I enjoy the challenge of
-                    taking an idea, refining it through countless iterations,
-                    and eventually turning it into something people can actually
-                    use and benefit from.
+                    {t("paragraph2")}
                 </p>
 
                 <Button
                     render={
                         <Link href="#faqs">
-                            Contact Me
-                            <ChevronRight size={16} />
+                            {t("contactButton")}
+                            {locale === "fa" ? (
+                                <ChevronLeft size={16} data-icon="inline-end" />
+                            ) : (
+                                <ChevronRight
+                                    size={16}
+                                    data-icon="inline-start"
+                                />
+                            )}
                         </Link>
                     }
                 />

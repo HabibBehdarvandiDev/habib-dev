@@ -1,0 +1,115 @@
+{
+    "hero": {
+        "badge": "¡Hola!",
+        "intro": "Soy",
+        "name": "Habib Behdarvandi",
+        "headline": {
+            "before": "Desarrollo",
+            "focus": "Full Stack",
+            "after": "aplicaciones web"
+        },
+        "contactButton": "Contáctame"
+    },
+    "about": {
+        "title": "Un poco sobre mí",
+        "paragraph1": "Hola, soy Habib. Empecé a programar porque me fascinaba la idea de crear algo desde la nada, y esa sensación sigue intacta. Hoy en día dedico la mayor parte de mi tiempo a desarrollar aplicaciones web, trabajar con tecnologías modernas y aprender constantemente. Disfruto del equilibrio entre la creatividad y la resolución de problemas que ofrece el desarrollo de software.",
+        "paragraph2": "Cuando trabajo en un proyecto, me importa mucho más que simplemente terminarlo. Me gusta comprender el panorama general, prestar atención a los detalles y construir las cosas de la manera correcta. Ya sea un proyecto personal o una plataforma de gran escala, disfruto el desafío de convertir una idea en un producto útil a través de numerosas iteraciones.",
+        "contactButton": "Contáctame"
+    },
+    "skills": {
+        "title": "Mis habilidades y tecnologías",
+        "description": "Tecnologías y herramientas que utilizo para diseñar, desarrollar, implementar y mantener aplicaciones web modernas."
+    },
+    "faq": {
+        "title": "Aclaremos las dudas",
+        "contact": {
+            "title": "¿Tienes una pregunta? Hablemos.",
+            "description": "Estoy a solo un mensaje de distancia. Ya sea un error, una colaboración o simplemente para saludar.",
+            "email": "Envíame un correo",
+            "telegram": "Escríbeme por Telegram"
+        },
+        "card": {
+            "title": "Preguntas sobre cómo trabajo",
+            "description": "Preguntas frecuentes sobre tu proyecto y mi forma de trabajar con los clientes."
+        },
+        "items": [
+            {
+                "question": "¿Qué tipo de proyectos desarrollas normalmente?",
+                "answer": "Principalmente desarrollo aplicaciones web full-stack, incluyendo plataformas SaaS, sistemas de gestión internos, plataformas comunitarias, soluciones de comercio electrónico y herramientas empresariales personalizadas. Disfruto llevar un proyecto desde la idea inicial hasta su implementación."
+            },
+            {
+                "question": "¿Ayudas con la planificación y la arquitectura del proyecto?",
+                "answer": "Por supuesto. Antes de escribir código, me gusta comprender los objetivos del negocio, planificar la estructura de la base de datos, definir la arquitectura de la aplicación e identificar posibles desafíos desde el principio. Una base sólida ahorra mucho tiempo más adelante."
+            },
+            {
+                "question": "¿Puedes encargarte tanto del front-end como del back-end?",
+                "answer": "Sí. Trabajo en toda la pila tecnológica, desde la creación de interfaces responsivas con Next.js y Tailwind CSS hasta el diseño de bases de datos, desarrollo de APIs, implementación de autenticación y despliegue de aplicaciones."
+            },
+            {
+                "question": "¿Qué tan pronto puedes comenzar?",
+                "answer": "Depende de mi carga de trabajo actual y del alcance del proyecto, pero normalmente respondo rápidamente y suelo poder comenzar a planificar y analizar los requisitos en pocos días."
+            },
+            {
+                "question": "¿Cómo sueles trabajar con clientes o equipos?",
+                "answer": "Prefiero una comunicación clara, expectativas realistas y actualizaciones frecuentes. Ya sea trabajando de forma independiente o en equipo, me enfoco en la transparencia, el código mantenible y en entregar soluciones que sigan siendo útiles mucho tiempo después del lanzamiento."
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Lo que dice la gente",
+        "description": "Opiniones de clientes, colaboradores y compañeros con quienes he tenido la oportunidad de trabajar.",
+        "empty": {
+            "title": "Aún no hay testimonios",
+            "description": "Actualmente estoy recopilando opiniones de clientes y colaboradores. ¡Vuelve pronto para ver lo que dicen!"
+        }
+    },
+    "experience": {
+        "title": "Dónde he trabajado",
+        "description": "Una cronología de las empresas, cargos y proyectos que han marcado mi trayectoria como desarrollador.",
+        "items": [
+            {
+                "date": "Sep 2025 - Dic 2025",
+                "title": "Especialista en ensamblaje de PCs para gaming",
+                "company": "PCMOD",
+                "description": "Ensamblé y configuré sistemas gaming personalizados, garantizando la compatibilidad del hardware, la optimización del rendimiento y el control de calidad."
+            },
+            {
+                "date": "Oct 2023 - Oct 2025",
+                "title": "Webmaster",
+                "company": "TSCO",
+                "description": "Gestioné y optimicé los sitios web de la empresa, mejorando el rendimiento, el SEO, los flujos de contenido y la experiencia del usuario."
+            },
+            {
+                "date": "Mar 2023 - Sep 2023",
+                "title": "Desarrollador Full-Stack",
+                "company": "TSCO",
+                "description": "Desarrollé plataformas internas y soluciones empresariales, trabajando en frontend, backend, bases de datos e integraciones de sistemas."
+            },
+            {
+                "date": "Ago 2022 - Oct 2022",
+                "title": "Instructor de ICDL",
+                "company": "Complejo de Emprendimiento Farabi",
+                "description": "Enseñé fundamentos de informática, software de oficina, habilidades de internet y alfabetización digital a estudiantes y profesionales."
+            },
+            {
+                "date": "Ene 2022 - Oct 2022",
+                "title": "Especialista en TI",
+                "company": "Universidad Técnica y Vocacional Amirkabir",
+                "description": "Brindé soporte técnico, mantenimiento de sistemas, resolución de problemas y asistencia de infraestructura en toda la universidad."
+            },
+            {
+                "date": "Abr 2021 - Presente",
+                "title": "Desarrollador Web Full-Stack",
+                "company": "Freelance",
+                "description": "Desarrollo aplicaciones web, herramientas de automatización y soluciones personalizadas para clientes utilizando tecnologías modernas de frontend y backend."
+            }
+        ]
+    },
+    "navigation": {
+        "about": "Sobre mí",
+        "skills": "Habilidades",
+        "faq": "Preguntas",
+        "testimonials": "Testimonios",
+        "experience": "Experiencia"
+    }
+}

@@ -1,0 +1,115 @@
+{
+    "hero": {
+        "badge": "Hey!",
+        "intro": "I'm",
+        "name": "Habib Behdarvandi",
+        "headline": {
+            "before": "I Build",
+            "focus": "Full Stack",
+            "after": "web applications"
+        },
+        "contactButton": "Contact Me"
+    },
+    "about": {
+        "title": "A bit About Me",
+        "paragraph1": "Hi, I'm Habib. I started programming because I loved the idea of creating something from nothing, and that feeling still hasn't gone away. These days, I spend most of my time building web applications, working with modern technologies, and constantly learning new things. I enjoy the balance between creativity and problem-solving that software development offers.",
+        "paragraph2": "When I'm working on a project, I care about more than just getting it done. I like understanding the bigger picture, paying attention to the details, and building things the right way. Whether it's a personal side project or a larger platform, I enjoy the challenge of taking an idea, refining it through countless iterations, and eventually turning it into something people can actually use and benefit from.",
+        "contactButton": "Contact Me"
+    },
+    "skills": {
+        "title": "My Skills & Stack",
+        "description": "Technologies and tools I use to design, build, deploy, and maintain modern web applications."
+    },
+    "faq": {
+        "title": "Let's Clear Things Up",
+        "contact": {
+            "title": "Got a question? Let's chat.",
+            "description": "I'm just a message away. Whether it's a bug, a collaboration, or just to say hello.",
+            "email": "Send me an email",
+            "telegram": "Text me on Telegram"
+        },
+        "card": {
+            "title": "Questions About How I Work",
+            "description": "Common questions about your project and how I work with clients."
+        },
+        "items": [
+            {
+                "question": "What kind of projects do you usually work on?",
+                "answer": "I primarily build full-stack web applications, including SaaS platforms, internal management systems, community platforms, e-commerce solutions, and custom business tools. I enjoy taking projects from the initial idea all the way to deployment."
+            },
+            {
+                "question": "Do you help with project planning and architecture?",
+                "answer": "Absolutely. Before writing code, I like to understand the business goals, plan the database structure, define the application architecture, and identify potential challenges early. A solid foundation saves a lot of time later."
+            },
+            {
+                "question": "Can you handle both front-end and back-end?",
+                "answer": "Yes. I work across the entire stack—from building responsive interfaces with Next.js and Tailwind CSS to designing databases, developing APIs, implementing authentication, and deploying applications."
+            },
+            {
+                "question": "How soon can you start?",
+                "answer": "That depends on my current workload and the project's scope, but I usually respond quickly and can often begin planning and discussing requirements within a few days."
+            },
+            {
+                "question": "How do you usually work with clients or teams?",
+                "answer": "I prefer clear communication, realistic expectations, and frequent updates. Whether I'm working independently or as part of a team, I focus on transparency, maintainable code, and delivering solutions that continue to work long after launch."
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "What People Say",
+        "description": "Feedback from clients, collaborators, and teammates I've had the opportunity to work with.",
+        "empty": {
+            "title": "No testimonials yet",
+            "description": "I'm currently collecting feedback from clients and collaborators. Check back soon to see what people have to say!"
+        }
+    },
+    "experience": {
+        "title": "Where I've Worked",
+        "description": "A timeline of the companies, roles, and projects that shaped my journey as a developer.",
+        "items": [
+            {
+                "date": "Sep 2025 - Dec 2025",
+                "title": "Gaming PC Assembly Specialist",
+                "company": "PCMOD",
+                "description": "Built and configured custom gaming systems, ensuring hardware compatibility, performance tuning, and quality assurance."
+            },
+            {
+                "date": "Oct 2023 - Oct 2025",
+                "title": "Webmaster",
+                "company": "TSCO",
+                "description": "Managed and optimized company websites, improving performance, SEO, content workflows, and overall user experience."
+            },
+            {
+                "date": "Mar 2023 - Sep 2023",
+                "title": "Full-Stack Developer",
+                "company": "TSCO",
+                "description": "Developed internal platforms and business solutions, working across frontend, backend, databases, and system integrations."
+            },
+            {
+                "date": "Aug 2022 - Oct 2022",
+                "title": "ICDL Instructor",
+                "company": "Farabi Entrepreneurship Complex",
+                "description": "Taught computer fundamentals, office software, internet skills, and digital literacy to students and professionals."
+            },
+            {
+                "date": "Jan 2022 - Oct 2022",
+                "title": "IT Specialist",
+                "company": "Amirkabir Technical & Vocational University",
+                "description": "Provided technical support, system maintenance, troubleshooting, and infrastructure assistance across the university environment."
+            },
+            {
+                "date": "Apr 2021 - Present",
+                "title": "Full-Stack Web Developer",
+                "company": "Freelance",
+                "description": "Building web applications, automation tools, and custom solutions for clients using modern frontend and backend technologies."
+            }
+        ]
+    },
+    "navigation": {
+        "about": "About",
+        "skills": "Skills",
+        "faq": "Q&A",
+        "testimonials": "Testimonials",
+        "experience": "Experience"
+    }
+}
